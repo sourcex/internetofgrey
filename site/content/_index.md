@@ -1,7 +1,7 @@
 ---
 title: Internet of Grey
 subtitle: A collection
-image: /img/dylan-collette-418140.jpg
+image: /img/adorable-animal-baby-923360-gray.jpg
 blurb:
   heading: Why Kaldi?
   text: >-

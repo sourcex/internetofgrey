@@ -3,12 +3,10 @@ title: Internet of Grey
 subtitle: A collection
 image: /img/adorable-animal-baby-923360-gray.jpg
 blurb:
-  heading: Why Kaldi?
+  heading: Bernard Carter
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    I lead a team that creates IoT and Digital Signage products and solutions
+    with a focus on automation, manageability and security.
 intro:
   heading: What we offer
   text: >-

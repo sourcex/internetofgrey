@@ -1,0 +1,658 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ *
+ * Each colors have exact same color scale system with 3 levels of solid
+ * colors with different brightness, and 1 soft color.
+ *
+ * - `XXX-1`: The most solid color used mainly for colored text. It must
+ *   satisfy the contrast ratio against when used on top of `XXX-soft`.
+ *
+ * - `XXX-2`: The color used mainly for hover state of the button.
+ *
+ * - `XXX-3`: The color for solid background, such as bg color of the button.
+ *   It must satisfy the contrast ratio with pure white (#ffffff) text on
+ *   top of it.
+ *
+ * - `XXX-soft`: The color used for subtle background such as custom container
+ *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
+ *   on top of it.
+ *
+ *   The soft color must be semi transparent alpha channel. This is crucial
+ *   because it allows adding multiple "soft" colors on top of each other
+ *   to create a accent, such as when having inline code block inside
+ *   custom containers.
+ *
+ * - `default`: The color used purely for subtle indication without any
+ *   special meanings attached to it such as bg color for menu hover state.
+ *
+ * - `brand`: Used for primary brand colors, such as link text, button with
+ *   brand theme, etc.
+ *
+ * - `tip`: Used to indicate useful information. The default theme uses the
+ *   brand color for this by default.
+ *
+ * - `warning`: Used to indicate warning to the users. Used in custom
+ *   container, badges, etc.
+ *
+ * - `danger`: Used to show error, or dangerous message to the users. Used
+ *   in custom container, badges, etc.
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Neo-brutalist custom color scheme with #D72F19 as accent */
+  --vp-c-accent-1: #D72F19;
+  --vp-c-accent-2: #E74A36;
+  --vp-c-accent-3: #C52815;
+  --vp-c-accent-soft: rgba(215, 47, 25, 0.14);
+
+  --vp-c-default-1: var(--vp-c-gray-1);
+  --vp-c-default-2: var(--vp-c-gray-2);
+  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-soft: var(--vp-c-gray-soft);
+
+  /* Use our accent color for brand */
+  --vp-c-brand-1: var(--vp-c-accent-1);
+  --vp-c-brand-2: var(--vp-c-accent-2);
+  --vp-c-brand-3: var(--vp-c-accent-3);
+  --vp-c-brand-soft: var(--vp-c-accent-soft);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  --vp-c-warning-1: var(--vp-c-yellow-1);
+  --vp-c-warning-2: var(--vp-c-yellow-2);
+  --vp-c-warning-3: var(--vp-c-yellow-3);
+  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+
+  --vp-c-danger-1: var(--vp-c-red-1);
+  --vp-c-danger-2: var(--vp-c-red-2);
+  --vp-c-danger-3: var(--vp-c-red-3);
+  --vp-c-danger-soft: var(--vp-c-red-soft);
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Neo-brutalist square buttons with bold styling */
+  --vp-button-brand-border: solid 2px var(--vp-c-brand-1);
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-hover-border: solid 2px var(--vp-c-brand-2);
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: solid 2px var(--vp-c-brand-1);
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+  
+  /* Square corners for brutalist design */
+  --vp-button-border-radius: 0;
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Neo-brutalist hero styling with our accent color */
+  --vp-home-hero-name-color: var(--vp-c-brand-1);
+  --vp-home-hero-name-background: none;
+  
+  /* Simple, bold background for hero image */
+  --vp-home-hero-image-background-image: linear-gradient(
+    to right,
+    #D72F19 0%,
+    #E74A36 100%
+  );
+  --vp-home-hero-image-filter: none;
+  
+  /* Square image styling for neo-brutalist design */
+  --vp-home-hero-image-border-radius: 0;
+}
+
+@media (min-width: 640px) {
+  :root {
+    /* Maintain consistent design across screen sizes */
+    --vp-home-hero-image-filter: none;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    /* Maintain consistent design across screen sizes */
+    --vp-home-hero-image-filter: none;
+  }
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Bold border for custom blocks (neo-brutalist style) */
+  --vp-custom-block-tip-border: solid 2px var(--vp-c-brand-1);
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+  
+  /* Square corners for all custom blocks - setting to 0px to be explicit */
+  --vp-custom-block-border-radius: 0px;
+  
+  /* Info block with bold styling */
+  --vp-custom-block-info-border: solid 2px var(--vp-c-default-1);
+  --vp-custom-block-info-text: var(--vp-c-text-1);
+  --vp-custom-block-info-bg: var(--vp-c-default-soft);
+  --vp-custom-block-info-code-bg: var(--vp-c-default-soft);
+  
+  /* Warning block with bold styling */
+  --vp-custom-block-warning-border: solid 2px var(--vp-c-warning-1);
+  --vp-custom-block-warning-text: var(--vp-c-text-1);
+  --vp-custom-block-warning-bg: var(--vp-c-warning-soft);
+  --vp-custom-block-warning-code-bg: var(--vp-c-warning-soft);
+  
+  /* Danger block with bold styling */
+  --vp-custom-block-danger-border: solid 2px var(--vp-c-danger-1);
+  --vp-custom-block-danger-text: var(--vp-c-text-1);
+  --vp-custom-block-danger-bg: var(--vp-c-danger-soft);
+  --vp-custom-block-danger-code-bg: var(--vp-c-danger-soft);
+  
+  /* Details block with bold styling */
+  --vp-custom-block-details-border: solid 2px var(--vp-c-text-1);
+  --vp-custom-block-details-text: var(--vp-c-text-1);
+  --vp-custom-block-details-bg: var(--vp-c-default-soft);
+  --vp-custom-block-details-code-bg: var(--vp-c-default-soft);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px var(--vp-c-brand-1) !important;
+  --docsearch-searchbox-focus-background: transparent !important;
+  --docsearch-searchbox-border-radius: 0 !important; /* Square corners */
+  --docsearch-hit-shadow: none !important; /* Remove shadows for brutalist design */
+  --docsearch-modal-shadow: 0 0 0 2px var(--vp-c-brand-1) !important; /* Bold border instead of shadow */
+  --docsearch-hit-active-color: var(--vp-c-white) !important;
+}
+
+/**
+ * Additional Neo-Brutalist Styles
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Global border-radius reset for square corners */
+  --vp-border-radius: 0;
+  
+  /* Bold typography */
+  --vp-font-weight-strong: 700;
+  
+  /* High contrast for better readability */
+  --vp-c-text-1: rgba(0, 0, 0, 0.95);
+  
+  /* Nav menu with bold styling */
+  --vp-nav-height: 64px;
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.95);
+  --vp-nav-screen-bg-color: var(--vp-nav-bg-color);
+  
+  /* Sidebar with bold styling */
+  --vp-sidebar-width: 290px;
+  --vp-sidebar-bg-color: #f5f5f5;
+}
+
+/* Neo-brutalist cards with bold borders */
+.vp-doc .custom-block {
+  border-width: 2px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.85);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 0 !important; /* Force square corners */
+}
+
+.vp-doc .custom-block:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.85);
+}
+
+/* Ensure all custom blocks have square corners */
+.vp-doc div.custom-block {
+  border-radius: 0 !important;
+}
+
+/* Target specific custom block types to ensure they have square corners */
+.vp-doc div.info,
+.vp-doc div.tip,
+.vp-doc div.warning,
+.vp-doc div.danger,
+.vp-doc div.details {
+  border-radius: 0 !important;
+}
+
+/* Square images throughout site */
+.vp-doc img {
+  border-radius: 0 !important;
+  border: 2px solid #000;
+}
+
+/* Bold links with underline */
+.vp-doc a {
+  text-decoration: none;
+  border-bottom: 2px solid var(--vp-c-brand-1);
+  transition: background-color 0.2s ease;
+}
+
+.vp-doc a:hover {
+  background-color: var(--vp-c-brand-soft);
+}
+
+/* Neo-brutalist table styling */
+.vp-doc table {
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+
+.vp-doc tr {
+  border-bottom: 2px solid #000;
+}
+
+.vp-doc th {
+  font-weight: 700;
+  background-color: var(--vp-c-brand-soft);
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.vp-doc td {
+  border-right: 2px solid #000;
+}
+
+/* Code blocks with square corners */
+.vp-doc div[class*='language-'] {
+  border-radius: 0;
+  border: 2px solid #000;
+}
+
+/* Override navbar button styling */
+.VPButton {
+  border-radius: 0 !important;
+  border-width: 2px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+/* Adjust sidebar elements */
+.VPSidebarItem {
+  font-weight: 500;
+}
+
+.VPSidebarItem.is-active {
+  position: relative;
+}
+
+.VPSidebarItem.is-active:before {
+  content: '■';
+  position: absolute;
+  left: -14px;
+  color: var(--vp-c-brand-1);
+}
+
+/**
+ * Brutalist Square Corner Overrides
+ * -------------------------------------------------------------------------- */
+
+/* Force square corners on everything */
+* {
+  border-radius: 0 !important;
+}
+
+/* Target the specific container elements shown in the screenshot */
+.custom-block.info,
+.custom-block.tip,
+.custom-block.warning,
+.custom-block.danger,
+.custom-block.details,
+div[class*="language-"],
+.vp-block {
+  border-radius: 0 !important;
+  overflow: visible !important; /* Prevent hidden overflows that might mask square corners */
+}
+
+/* Target any potential interior containers */
+.custom-block > div,
+.custom-block > p {
+  border-radius: 0 !important;
+}
+
+/* Ensure the container shadow follows the square shape */
+.custom-block::before,
+.custom-block::after {
+  border-radius: 0 !important;
+}
+
+/* Style specific outer container wrapper if it exists */
+.vp-doc .custom-container {
+  border-radius: 0 !important;
+}
+
+/* Target any specific types of rounded elements */
+.vp-doc .custom-block.info p.custom-block-title,
+.vp-doc .custom-block.tip p.custom-block-title,
+.vp-doc .custom-block.warning p.custom-block-title,
+.vp-doc .custom-block.danger p.custom-block-title,
+.vp-doc .custom-block.details summary {
+  border-radius: 0 !important;
+}
+
+/* Ensure the box-shadow styling matches our square aesthetic */
+.vp-doc .custom-block.info,
+.vp-doc .custom-block.tip,
+.vp-doc .custom-block.warning,
+.vp-doc .custom-block.danger,
+.vp-doc .custom-block.details {
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.85) !important;
+}
+
+/* Target specific context blocks */
+.vp-doc .info,
+.vp-doc .tip,
+.vp-doc .warning,
+.vp-doc .danger,
+.vp-doc details {
+  border-radius: 0 !important;
+}
+
+/**
+ * Specific targeting for the blocks in the screenshot
+ * -------------------------------------------------------------------------- */
+
+/* Target the specific container types shown in the screenshot */
+.vp-doc .custom-block.info,
+.vp-doc .custom-block.tip,
+.vp-doc .custom-block.warning,
+.vp-doc .custom-block.danger,
+.vp-doc .custom-block.details,
+.vp-doc div.info,
+.vp-doc div.tip, 
+.vp-doc div.warning,
+.vp-doc div.danger,
+.vp-doc details.details {
+  margin: 16px 0;
+  padding: 16px;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-radius: 0 !important;
+  overflow: visible;
+}
+
+/* Style each block type individually */
+.vp-doc .info,
+.vp-doc div.info {
+  border-color: var(--vp-c-default-1) !important;
+  background-color: var(--vp-c-default-soft) !important;
+}
+
+.vp-doc .tip,
+.vp-doc div.tip {
+  border-color: var(--vp-c-brand-1) !important;
+  background-color: var(--vp-c-brand-soft) !important;
+}
+
+.vp-doc .warning,
+.vp-doc div.warning {
+  border-color: var(--vp-c-warning-1) !important;
+  background-color: var(--vp-c-warning-soft) !important;
+}
+
+.vp-doc .danger,
+.vp-doc div.danger {
+  border-color: var(--vp-c-danger-1) !important;
+  background-color: var(--vp-c-danger-soft) !important;
+}
+
+/* Style the titles of each block */
+.vp-doc .custom-block-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Add hard shadow to exactly match the screenshot */
+.vp-doc .info,
+.vp-doc .tip,
+.vp-doc .warning,
+.vp-doc .danger,
+.vp-doc details {
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.85);
+}
+
+/**
+ * Dark Mode Enhancements
+ * -------------------------------------------------------------------------- */
+
+.dark {
+  /* Improve text contrast in dark mode */
+  --vp-c-text-1: rgba(255, 255, 255, 0.95);
+  --vp-c-text-2: rgba(255, 255, 255, 0.80);
+  --vp-c-text-3: rgba(255, 255, 255, 0.65);
+  
+  /* Darker background for better contrast */
+  --vp-c-bg: #111111;
+  --vp-c-bg-alt: #1a1a1a;
+  --vp-c-bg-soft: #242424;
+  
+  /* More vibrant accent colors for dark mode */
+  --vp-c-accent-1: #FF4736;
+  --vp-c-accent-2: #FF5A4A;
+  --vp-c-accent-3: #E03A29;
+  --vp-c-accent-soft: rgba(255, 71, 54, 0.16);
+  
+  /* Carry over the accent colors to brand */
+  --vp-c-brand-1: var(--vp-c-accent-1);
+  --vp-c-brand-2: var(--vp-c-accent-2);
+  --vp-c-brand-3: var(--vp-c-accent-3);
+  --vp-c-brand-soft: var(--vp-c-accent-soft);
+  
+  /* Higher contrast borders */
+  --vp-c-border: rgba(255, 255, 255, 0.20);
+  --vp-c-divider: rgba(255, 255, 255, 0.15);
+  
+  /* Navigation background */
+  --vp-nav-bg-color: rgba(17, 17, 17, 0.95);
+  --vp-nav-screen-bg-color: var(--vp-nav-bg-color);
+  
+  /* Sidebar styling */
+  --vp-sidebar-bg-color: #1a1a1a;
+}
+
+/* Neo-brutalist cards in dark mode */
+.dark .vp-doc .custom-block {
+  box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark .vp-doc .custom-block:hover {
+  box-shadow: 6px 6px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Images in dark mode */
+.dark .vp-doc img {
+  border: 2px solid #fff;
+}
+
+/* Links in dark mode */
+.dark .vp-doc a {
+  border-bottom: 2px solid var(--vp-c-brand-1);
+}
+
+.dark .vp-doc a:hover {
+  color: var(--vp-c-brand-1);
+  background-color: rgba(255, 71, 54, 0.1);
+}
+
+/* Table styling in dark mode */
+.dark .vp-doc table {
+  border: 2px solid #fff;
+}
+
+.dark .vp-doc tr {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.dark .vp-doc th {
+  background-color: var(--vp-c-brand-soft);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.dark .vp-doc td {
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Code blocks in dark mode */
+.dark .vp-doc div[class*='language-'] {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: #1a1a1a;
+}
+
+/* Feature blocks in dark mode (based on the screenshot) */
+.dark .VPFeature {
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  background-color: #1a1a1a !important;
+}
+
+/* Button styling in dark mode */
+.dark .VPButton {
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+/* Hero section text in dark mode */
+.dark .name,
+.dark .text {
+  color: var(--vp-c-text-1) !important;
+}
+
+/* Custom blocks styling for dark mode */
+.dark .vp-doc .custom-block.info,
+.dark .vp-doc .custom-block.tip,
+.dark .vp-doc .custom-block.warning,
+.dark .vp-doc .custom-block.danger,
+.dark .vp-doc .custom-block.details,
+.dark .vp-doc div.info,
+.dark .vp-doc div.tip, 
+.dark .vp-doc div.warning,
+.dark .vp-doc div.danger,
+.dark .vp-doc details.details {
+  background-color: #1a1a1a !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+/* Style each block type individually in dark mode */
+.dark .vp-doc .info,
+.dark .vp-doc div.info {
+  border-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark .vp-doc .tip,
+.dark .vp-doc div.tip {
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+.dark .vp-doc .warning,
+.dark .vp-doc div.warning {
+  border-color: #F0AD31 !important;
+}
+
+.dark .vp-doc .danger,
+.dark .vp-doc div.danger {
+  border-color: #EF4B55 !important;
+}
+
+/* Heading text in dark mode */
+.dark h1,
+.dark h2, 
+.dark h3, 
+.dark h4, 
+.dark h5, 
+.dark h6 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Make active navigation items more visible in dark mode */
+.dark .VPSidebarItem.is-active .text {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.dark .VPSidebarItem.is-active:before {
+  color: var(--vp-c-brand-1);
+}
+
+/* Improve dark mode main content area */
+.dark .VPContent {
+  background-color: var(--vp-c-bg);
+}
+
+/* Enhance dark mode home hero section */
+.dark .VPHome {
+  background-color: var(--vp-c-bg);
+}
+
+.dark .VPHero .name,
+.dark .VPHero .text {
+  color: var(--vp-c-text-1) !important;
+}
+
+.dark .VPHero .tagline {
+  color: var(--vp-c-text-2) !important;
+}
+
+/* Bold headings in dark mode */
+.dark .vp-doc h1,
+.dark .vp-doc h2, 
+.dark .vp-doc h3, 
+.dark .vp-doc h4 {
+  font-weight: 700;
+}
+
+/* Improve code highlighting contrast in dark mode */
+.dark .vp-doc :not(pre) > code {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--vp-c-brand-1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Enhance blockquotes in dark mode */
+.dark .vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background-color: rgba(255, 71, 54, 0.05);
+}
+
+/* Add a subtle border to the bottom of the header in dark mode */
+.dark .VPNav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Make the current page link more prominent in dark mode */
+.dark .VPLink.active {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 700;
+}
+
+/* Make buttons more visible in dark mode */
+.dark .VPButton.brand {
+  background-color: var(--vp-c-brand-3);
+  color: white;
+  border: 2px solid var(--vp-c-brand-1);
+}
+
+.dark .VPButton.brand:hover {
+  background-color: var(--vp-c-brand-2);
+}
+

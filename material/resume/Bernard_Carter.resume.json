@@ -1,0 +1,408 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Bernard Carter",
+    "label": "Chief Technology Officer at Now Micro",
+    "image": "",
+    "email": "bcarter@scrabbits.com",
+    "phone": "612-802-4894",
+    "url": "",
+    "summary": "I lead a team that creates Device Lifecycle, IoT and Digital Signage products and solutions with a focus on automation, manageability and security.",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "bernard-carter-22570b3",
+        "url": "https://www.linkedin.com/in/bernard-carter-22570b3/"
+      },
+      {
+        "network": "Twitter",
+        "username": "springfailings",
+        "url": "https://twitter.com/springfailings"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Intel Corporation",
+      "position": "Intel US Channel Board of Advisors",
+      "startDate": "2023-03-31",
+      "endDate": "",
+      "highlights": [],
+      "summary": "The Intel Channel Board of Advisors exists to provide a forum for appointed members to contribute insight and advice to Intel regarding product technologies and programs; using a best-in-class industry model, this diverse group of channel leaders engages in a two-way dialog.",
+      "url": "https://www.linkedin.com/company/intel-corporation/"
+    },
+    {
+      "name": "Now Micro",
+      "position": "Chief Technology Officer",
+      "startDate": "2021-01-31",
+      "endDate": "",
+      "highlights": [],
+      "summary": "I lead a technical organization that provides a variety of customer facing software solutions and services focused around IoT/Edge Computing, device lifecycle management and enterprise modernization and automation.",
+      "url": "https://www.linkedin.com/company/now-micro/"
+    },
+    {
+      "name": "Now Micro",
+      "position": "Vice President - Technology",
+      "startDate": "2019-09-30",
+      "endDate": "2021-01-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/now-micro/"
+    },
+    {
+      "name": "Now Micro",
+      "position": "VP, OEM & Product Development",
+      "startDate": "2018-10-31",
+      "endDate": "2019-09-30",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/now-micro/"
+    },
+    {
+      "name": "Now Micro",
+      "position": "OEM Executive Director",
+      "startDate": "2017-07-31",
+      "endDate": "2018-10-31",
+      "highlights": [],
+      "summary": "Responsible for providing strategic leadership of the OEM division to establish long-range goals, strategies and growth development.",
+      "url": "https://www.linkedin.com/company/now-micro/"
+    },
+    {
+      "name": "Now Micro",
+      "position": "Director of Product Development and Operations",
+      "startDate": "2016-04-30",
+      "endDate": "2017-07-31",
+      "highlights": [],
+      "summary": "Provide management and technical leadership for Research and Product Development, Production and Warehouse and Service teams",
+      "url": "https://www.linkedin.com/company/now-micro/"
+    },
+    {
+      "name": "Now Micro",
+      "position": "Manager of Research and Product Development",
+      "startDate": "2015-03-31",
+      "endDate": "2016-04-30",
+      "highlights": [],
+      "summary": "- Lead a software development team focused on both customer facing/commercial software and internal software development and process improvement efforts\n- Internal IT architecture\n- Serve as a customer facing, cross functional team member to drive adoption and customer satisfaction",
+      "url": "https://www.linkedin.com/company/now-micro/",
+      "location": "Greater Minneapolis-St. Paul Area"
+    },
+    {
+      "name": "Now Micro",
+      "position": "Senior Solutions Architect",
+      "startDate": "2013-05-31",
+      "endDate": "2015-03-31",
+      "highlights": [],
+      "summary": "Provide consulting services for:\n     - Microsoft Active Directory\n     - PKI\n     - Microsoft Certificate Services\n     - Microsoft DirectAccess and IPsec\n     - Security hardening and regulatory compliance\n     - Imaging and process automation\n     - Microsoft Windows Embedded development and customization\nApplication Development:\n     - Mobile Development utilizing C# and Xamarin tools for Windows Phone, Android and Apple iOS devices\n     - Systems Management Utilities development utilizing C#, WCF, WPF and related technologies\n     - Android OS customization and development utilizing C/C++\nProduct Development:\n     - Provide technical design and customization for OEM customers",
+      "url": "https://www.linkedin.com/company/now-micro/"
+    },
+    {
+      "name": "General Mills",
+      "position": "IS Security Architect",
+      "startDate": "2011-06-30",
+      "endDate": "2013-05-31",
+      "highlights": [],
+      "summary": "- Data Discovery/Data Loss Prevention Project Manager and subject matter expert\n- Provide Security Awareness content and training for new employees and events\n- Perform cloud/SaaS vendor assessments for Vendor Assessment Program\n- Stabilize and consult on Microsoft Rights Management Services\n- Mobile access and application security consulting\n- Provide consulting on miscellaneous security/Active Directory/Development topics",
+      "url": "https://www.linkedin.com/company/general-mills/",
+      "location": "Greater Minneapolis-St. Paul Area"
+    },
+    {
+      "name": "General Mills",
+      "position": "Technical Staff Consultant - Windows and Active Directory Technologies",
+      "startDate": "2009-10-31",
+      "endDate": "2011-06-30",
+      "highlights": [],
+      "summary": "A member of a team responsible for imaging, software deployment infrastructure and Active Directory.  Subject matter expert and owner for Microsoft Active Directory Group Policy, client security and application compatibility.\n\nTechnical Architect – Windows 7 Implementation Project\n- Created automated pilot image build environment in Microsoft Deployment Toolkit, allowing quick iteration during application compatibility testing phase\n - Application Compatibility - Oversaw contractors and gave work direction to employees during application testing phase\n- Installed and documented UAG/DirectAccess pilot environment\n- Automated key processes utilizing PowerShell\nSecurity Awareness\n- Member of a cross-functional group that concentrates on all aspects of security awareness, physical and electronic.\n- Gave presentations to groups on home computer security, including physical aspects of computer",
+      "url": ""
+    },
+    {
+      "name": "General Mills",
+      "position": "Desktop Security Engineer",
+      "startDate": "2006-10-31",
+      "endDate": "2009-10-31",
+      "highlights": [],
+      "summary": "- Manage global anti-malware/AV infrastructure and risk analysis for desktop computing environment\n- Architecture and management of global desktop patching infrastructure\n- Provide security landscape updates and guidance\n- Automated management of security infrastructure maintenance via PowerShell",
+      "url": "https://www.linkedin.com/company/general-mills/"
+    },
+    {
+      "name": "Minnetonka Public Schools",
+      "position": "Network Systems Specialist",
+      "startDate": "2004-07-31",
+      "endDate": "2006-10-31",
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "name": "Minnetonka Public Schools",
+      "position": "Level 3 Support",
+      "startDate": "2004-04-30",
+      "endDate": "2004-07-31",
+      "highlights": [],
+      "url": ""
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Minnesota-Twin Cities",
+      "area": "",
+      "studyType": "",
+      "startDate": "1999-12-31",
+      "endDate": "2002-12-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Minnesota School of Business",
+      "area": "",
+      "studyType": "Bachelor of Science - Information Technology",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Certified Information Systems Security Professional (CISSP®)",
+      "issuer": "(ISC)2"
+    },
+    {
+      "name": "Project+",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "Network+",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "Certified Professional 4 (VCP4)",
+      "issuer": "VMware"
+    },
+    {
+      "name": "Certified Incident Handler (GCIH)",
+      "issuer": "GIAC"
+    },
+    {
+      "name": "A+",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "Cisco Certified Network Associate (CCNA)",
+      "issuer": "Cisco"
+    },
+    {
+      "name": "Security+",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "Microsoft Certified IT Professional Enterprise Administrator",
+      "issuer": "Microsoft"
+    },
+    {
+      "name": "Windows Server 2008 Active Directory, Configuration",
+      "issuer": "Microsoft"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Navigating the HTML5 Digital Signage Operating System Ecosystem",
+      "publisher": "Embedded System Engineering",
+      "releaseDate": "2016-01-27",
+      "summary": "Seen by users as falling under the Internet of Things, digital signage, like the overall IoT, challenges us to develop solutions which demonstrate increased awareness of total solution security while still delivering 21st century consumer-driven experiences. High profile security events have pushed device security to the forefront for users. Low-power, HTML5 digital signage devices can deliver a simple consumer interface and increased device security with a low total cost of ownership. This article will examine digital signage industry trends and give some goal posts to guide product development and solution selection in this changing environment.\n\n",
+      "url": "http://eecatalog.com/digital-signage/2017/01/27/navigating-the-html5-digital-signage-operating-system-ecosystem/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Linux System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "ASP.NET Core",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Kubernetes",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows 10 IoT Enterprise",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "General Mills",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "VMware",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Information Security",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Storage Area Networks",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Identity and Access Managment",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Security",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Security",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IoT ",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Network Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Information Security Awareness",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Process Automation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Disaster Recovery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Internet Information Services (IIS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Integration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Datacenter Virtualization",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Active Directory",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Business Process Improvement",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "iOS development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cross-functional Team Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "DLP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Information Security Governance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "IIS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Powershell",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Azure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows 7",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Domain Migrations",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SharePoint",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AWS Elastic Beanstalk",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
